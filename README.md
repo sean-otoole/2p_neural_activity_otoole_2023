@@ -18,8 +18,13 @@ At the moment this README is still under construction, more details to follow.
 ├── fig_6_panels_A_B_C.m                            : top level script for processing calcium imaging data and displaying average calcium imaging traces across specific paradigms and cell types
 ├── fig_6_panels_D_E_F.m                            : top level script for estimating the noise contributions to the signals examined in panels A,B and C.
 ├── fig_6_panels_G_H.m                              : top level script for calculating and and plotting the correlations between neural activity and either running or visual flow
-├── XXX.m                                           : XXX
-├── XXX.m                                           : XXX
+├── filter_pval_array.m                             : funciton that remove significant p-values that are only briefly significant in a time series data set
+├── ftfil.m                                         : high/low pass filter function (borrowed/not my code)
+├── getExpLog.m                                     : functiona that retrieves experiment log data (borrowed/not my code)
+├── get_deltas_per_site.m                           : function that calculates the average delta value per imaging site
+├── get_file_size.m                                 : function that gets file size (borrowed/not my code)
+├── get_indices_fig_1.m                             : retrieves the indices for a set of ROIs (regions of interest) used the calculate average fluorescence values for the photoconversion ratio analysis
+├── get_run_vis_correlations_flg.m                  : function for calculating the correlaiton values per neuron between neural activity and either running speed or visual flow speed
 ├── XXX.m                                           : XXX
 ├── XXX.m                                           : XXX
 ├── XXX.m                                           : XXX
@@ -28,8 +33,8 @@ At the moment this README is still under construction, more details to follow.
 ├── images/                                         : contains example images used for explanations within the README
 │   └── XXX.png
 │   └── XXX.png
-├── ca.m                                            : clears all currently open figures (not my code)
-├── act2mat.m/                                      : converts all z-layers for one imaging site and time point into to a matrix (not my code)
+├── ca.m                                            : clears all currently open figures (borrowned/not my code)
+├── act2mat.m/                                      : converts all z-layers for one imaging site and time point into to a matrix (borrowed/not my code)
 ├── LICENSE.md                                      : license
 └── README.md                                       : project description
 
