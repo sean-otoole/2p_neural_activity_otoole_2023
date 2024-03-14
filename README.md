@@ -23,14 +23,14 @@ At the moment this README is still under construction, more details to follow.
 ├── getExpLog.m                                     : function that retrieves experiment log data (borrowed/not my code)
 ├── get_deltas_per_site.m                           : function that calculates the average delta value per imaging site
 ├── get_file_size.m                                 : function that gets file size (borrowed/not my code)
-├── get_indices_fig_1.m                             : retrieves the indices for a set of ROIs (regions of interest) used the calculate average fluorescence values for the photoconversion ratio analysis
+├── get_indices_fig_1.m                             : retrieves the indices for a set of regions of interest (ROIs) used the calculate average fluorescence values for the photoconversion ratio analysis
 ├── get_run_vis_correlations_flg.m                  : function for calculating the correlaiton values per neuron between neural activity and either running speed or visual flow speed
 ├── get_site_indices_for_bootstrap.m                : function for acquiring frame indices for a particular set of sites
 ├── get_snps_flg.m                                  : function, that given a stimulus type, a set of imaging sites and threshold parameters, will return snippets of activity for the queried stimulus type across all neurons
 ├── get_snps_flg_odd_even.m                         : returns a subset of activity snippets, used for noise estimation
 ├── get_the_deltas.m                                : returns the calcium deltas for the CaMPARI data set
 ├── get_the_figs_matlab.m                           : master script for generating all matlab relevant figures for O'Toole, 2023 manuscript
-├── get_the_roi_counts.m                            : returns the number of region of interests (ROIs) for a given set of imaging sites
+├── get_the_roi_counts.m                            : returns the number of ROIs for a given set of imaging sites
 ├── get_the_snps_fig_1.m                            : function for acuuiring stimulus specific snippets of activity, specifically for the CaMPARI data set
 ├── get_unique_animals.m                            : funciton that returns the number of unique animals for a set of imaging sites
 ├── load_ach_chans.m                                : loads the auxilary channels (running, visual stimulus, etc.) for a given experimental id (borrowed/not my code)
@@ -38,10 +38,18 @@ At the moment this README is still under construction, more details to follow.
 ├── nan_sem.m                                       : calculates standard error of the mean while ignoring nans (borrowed/not my code)
 ├── nan_std.m                                       : calculates standard deviation of the mean while ignorning nans (borrowed/not my code)
 ├── nbstrp.m                                        : function that, given two or more groupings, an input data set, and a number of repetitions, performs a hierarchical bootstrap comparison (borrowed/not my code)
-├── XXX.m                                           : XXX
-├── XXX.m                                           : XXX
-├── XXX.m                                           : XXX
-├── XXX.m                                           : XXX
+├── normalizeVector.m                               : funciton that normalizes an input to its peak value
+├── plotSEM.m                                       : funciton that plots the average of time series data along with the standard error of the mean (borrowed/not my code)
+├── plot_dist_with_noise_estimate.m                 : plotting code for displaying the distribution of noise estimates alongside the experimentally obtained value
+├── plot_linear_models.m                            : plotting code for multiple linear regressions
+├── plot_the_traces_fig_6.m                         : plotting code for calcium activity comparisons, outputs statistical comparisons, averaged traces as well as running and visual stimuli
+├── ratio_calc.m                                    : for a set of sites returns the ratio of red to green fluorescence for all ROIs
+├── smooth2.m                                       : smoothing function (borrowed/not my code)
+├── supp_1_panels_a_through_c.m                     : plotting code for displaying multiple regressions across aniumals for comparing photoconversion to neural activity responses
+├── supp_1_panels_d_through_j.m                     : facs data plotting code 
+├── supp_6_all_panels.m                             : plots numerous supplemental panels related to calcium imaging experiments
+├── trig2snps_.m                                    : given a set of triggers or indices returns calcium activity snippets around those indices (borrowed/not my code)
+├── trig2snps2.m                                    : modified version of trig2nps, returns additional auxilary traces (modified from borrowed code)
 ├── images/                                         : contains example images used for explanations within the README
 │   └── XXX.png
 │   └── XXX.png
