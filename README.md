@@ -25,7 +25,19 @@ At the moment this README is still under construction, more details to follow.
 ├── get_file_size.m                                 : function that gets file size (borrowed/not my code)
 ├── get_indices_fig_1.m                             : retrieves the indices for a set of ROIs (regions of interest) used the calculate average fluorescence values for the photoconversion ratio analysis
 ├── get_run_vis_correlations_flg.m                  : function for calculating the correlaiton values per neuron between neural activity and either running speed or visual flow speed
-├── XXX.m                                           : XXX
+├── get_site_indices_for_bootstrap.m                : function for acquiring frame indices for a particular set of sites
+├── get_snps_flg.m                                  : function, that given a stimulus type, a set of imaging sites and threshold parameters, will return snippets of activity for the queried stimulus type across all neurons
+├── get_snps_flg_odd_even.m                         : returns a subset of activity snippets, used for noise estimation
+├── get_the_deltas.m                                : returns the calcium deltas for the CaMPARI data set
+├── get_the_figs_matlab.m                           : master script for generating all matlab relevant figures for O'Toole, 2023 manuscript
+├── get_the_roi_counts.m                            : returns the number of region of interests (ROIs) for a given set of imaging sites
+├── get_the_snps_fig_1.m                            : function for acuuiring stimulus specific snippets of activity, specifically for the CaMPARI data set
+├── get_unique_animals.m                            : funciton that returns the number of unique animals for a set of imaging sites
+├── load_ach_chans.m                                : loads the auxilary channels (running, visual stimulus, etc.) for a given experimental id (borrowed/not my code)
+├── load_lvd.m                                      : loads an auxilary data file (borrowed/not my code)
+├── nan_sem.m                                       : calculates standard error of the mean while ignoring nans (borrowed/not my code)
+├── nan_std.m                                       : calculates standard deviation of the mean while ignorning nans (borrowed/not my code)
+├── nbstrp.m                                        : function that, given two or more groupings, an input data set, and a number of repetitions, performs a hierarchical bootstrap comparison (borrowed/not my code)
 ├── XXX.m                                           : XXX
 ├── XXX.m                                           : XXX
 ├── XXX.m                                           : XXX
