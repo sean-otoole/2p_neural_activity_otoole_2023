@@ -68,3 +68,7 @@ At the moment this README is still under construction, more details to follow.
             <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_6.png" width = "600" align = "middle">
 </p>
 
+<p align="center">
+            <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_s1.png" width = "600" align = "middle">
+</p>
+
