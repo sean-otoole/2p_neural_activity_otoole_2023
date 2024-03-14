@@ -6,3 +6,32 @@ Matlab code for the analysis of neural imaging data in awake behaving animals fo
 
 At the moment this README is still under construction, more details to follow.
 
+
+## Project Organization
+```
+┌── correlate_pc_with_act.m                         : funciton that returns a set of correlations given several inputs
+|── delta_calc.m                                    : returns the delta values for a set of time points given a peak and baseline period
+├── determine_frameset_fig_6.m                      : function which returns the indices of specific imaging frames relevant to a particular paradigm, ie only a subset of imaged frames contain a relevant behavioral paradigm or specific stimulus
+├── determine_frameset_with_running_thresh.m        : similar to the previous function, except some framesets are excluded due to insufficient running values
+├── estimate_noise_std.m                            : calculates the standard deviation of the of noise, as estimated by comparing odd to even behavioral triggers
+├── fig_1_panels.m                                  : displays example behavioral auxillary images, example microscopy images, raster plots for calcium imaging traces, as well as regression and correlation plots
+├── fig_6_panels_A_B_C.m                            : top level script for processing calcium imaging data and displaying average calcium imaging traces across specific paradigms and cell types
+├── XXX.m                                           : XXX
+├── XXX.m                                           : XXX
+├── XXX.m                                           : XXX
+├── XXX.m                                           : XXX
+├── XXX.m                                           : XXX
+├── XXX.m                                           : XXX
+├── XXX.m                                           : XXX
+├── XXX.m                                           : XXX
+├── XXX.m                                           : XXX
+├── images/                                         : contains example images used for explanations within the README
+│   └── XXX.png
+│   └── XXX.png
+├── ca.m                                            : clears all currently open figures (not my code)
+├── act2mat.m/                                      : converts all z-layers for one imaging site and time point into to a matrix (not my code)
+├── LICENSE.md                                      : license
+└── README.md                                       : project description
+
+```
+
