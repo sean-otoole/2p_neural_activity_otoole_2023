@@ -40,6 +40,6 @@ At the moment this README is still under construction, more details to follow.
 </p>
 
 <p align="center">
-            <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_2.png" height= "600" align = "middle">
+            <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_6.png" height= "600" align = "middle">
 </p>
 
