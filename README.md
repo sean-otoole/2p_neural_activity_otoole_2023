@@ -17,7 +17,7 @@ At the moment this README is still under construction, more details to follow.
 ├── fig_1_panels.m                                  : displays example behavioral auxillary images, example microscopy images, raster plots for calcium imaging traces, as well as regression and correlation plots
 ├── fig_6_panels_A_B_C.m                            : top level script for processing calcium imaging data and displaying average calcium imaging traces across specific paradigms and cell types
 ├── fig_6_panels_D_E_F.m                            : top level script for estimating the noise contributions to the signals examined in panels A,B and C.
-├── XXX.m                                           : XXX
+├── fig_6_panels_G_H.m                              : top level script for calculating and and plotting the correlations between neural activity and either running or visual flow
 ├── XXX.m                                           : XXX
 ├── XXX.m                                           : XXX
 ├── XXX.m                                           : XXX
@@ -36,10 +36,10 @@ At the moment this README is still under construction, more details to follow.
 ```
 
 <p align="center">
-            <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_1.png" height= "600" align = "middle">
+            <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_1.png" width = "600" align = "middle">
 </p>
 
 <p align="center">
-            <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_6.png" height= "600" align = "middle">
+            <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_6.png" width = "600" align = "middle">
 </p>
 
