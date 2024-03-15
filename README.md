@@ -1,4 +1,4 @@
-# 2p_analyses_OToole_2023
+# Two-photon calcium imaging analysis of neuronal activity in functionally specific populations
 
 Matlab code for the analysis of neural imaging data in awake behaving animals for the publication entitled: [Molecularly targetable cell types in mouse visual cortex have distinguishable prediction error responses](https://www.cell.com/neuron/pdf/S0896-6273(23)00626-8.pdf). This README contains modified excerpts from that study as well as descriptions for each individual piece of code.
 
@@ -64,6 +64,14 @@ Matlab code for the analysis of neural imaging data in awake behaving animals fo
             <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_1.png" width = "900" align = "middle">
 </p>
 
+###L2/3 excitatory cell type assignment
+
+(A) Expression heatmap for a select number of genes enriched in each of the three L2/3 excitatory cell types for all L2/3 excitatory neurons examined in this study as in Figure 2A. Unassigned neurons (60) are not shown. Color values correspond to expression level. To reduce aliasing, data are smoothed across cells with a window size of 20.
+(B) As in (A), but for all L2/3 V1 excitatory neurons from a reference dataset.25
+(C) Marker gene expression of L2/3 excitatory neurons (19,689) examined in this study (6,495 Adamts2, 12,143 Agmat, 991 Rrad) correlated with marker gene expression of all L2/3 V1 excitatory neurons from a reference dataset.25 Correlation of the gene expression vectors was calculated between individual neurons of this study with averaged expression vectors for each of the L2/3 excitatory types of the reference dataset. Assigned cell types of each neuron are indicated with color bars on top (this study) and left.25 To prevent aliasing, data are smoothed across cells with a window size of 20.
+
+***
+
 ### Functional tagging with CaMPARI2
 **(A)** Schematic of the experimental approach: C57BL/6 mice that express CaMPARI2 in V1 were head-fixed on a spherical treadmill in a virtual reality environment.
 A 405 nm laser was directed at V1 through a cranial window to trigger photoconversion of CaMPARI2. Tissue from granular and supragranular layers of V1 was
@@ -82,6 +90,8 @@ F green) was used as a measure of photoconversion. Plotted are neurons from 4 mi
 a linear fit (r = 0.043). Shading indicates the 95% confidence bound for the linear fit. Here and elsewhere: p < 0.05; **p < 0.01; ***p < 0.001; n.s., not significant.
 **(F)** Population vector correlation of the visuomotor mismatch, running onset, and grating onset response with photoconversion during mismatch (4 mice). Red
 horizontal bars mark median. Note, the data and fit shown in (E) are aggregated over mice.
+
+***
 
 <p align="center">
             <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_6.png" width = "900" align = "middle">
@@ -110,6 +120,8 @@ show visually driven responses and are significantly less driven by running than
 neurons. Previous work has suggested that negative prediction error neurons are bottom-up inhibited by Sst positive interneurons, while the source of top-
 down inhibition on positive prediction error neurons remains unclear.
 
+***
+
 <p align="center">
             <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_s1.png" width = "900" align = "middle">
 </p>
@@ -126,6 +138,8 @@ down inhibition on positive prediction error neurons remains unclear.
 separately (1 st photoconversion group, 1787 cells; 2 nd photoconversion group, 1786 cells; 3rd photoconversion group, 1786 cells; 4 th photoconversion group, 1787 cells). Box plots mark the median and quartiles, whiskers extend to cover data up to ± 1.5 inter quartile range past the 75th and 25th quartiles respectively. A small number of cells had ratios larger than 1 (not shown).
 **(I)** To test for stability of FACS sorting, we measured the red to green ratio in the photoconversion groups shown in E separately by passing them through the FACS sorter again (1 st photoconversion group, 399 cells; 2nd photoconversion group, 539 cells; 3 rd photoconversion group, 504 cells; 4th photoconversion group, 458 cells). Shown is the distribution of red to green ratios measured in the second measurement. Box plots mark the median and quartiles, whiskers extend to cover data up to ±30 1.5 inter quartile range past the 75th and 25th quartiles respectively.
 **(J)** The median red to green ratios for the sort and re-sort experiments in panels H and I. Error bars correspond to the 25th and 75th percentile.
+
+***
 
 ### Methods
 
