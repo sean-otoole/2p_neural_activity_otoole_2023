@@ -64,13 +64,6 @@ Matlab code for the analysis of neural imaging data in awake behaving animals fo
             <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_1.png" width = "900" align = "middle">
 </p>
 
-### L2/3 excitatory cell type assignment
-(A) Expression heatmap for a select number of genes enriched in each of the three L2/3 excitatory cell types for all L2/3 excitatory neurons examined in this study as in Figure 2A. Unassigned neurons (60) are not shown. Color values correspond to expression level. To reduce aliasing, data are smoothed across cells with a window size of 20.
-(B) As in (A), but for all L2/3 V1 excitatory neurons from a reference dataset.25
-(C) Marker gene expression of L2/3 excitatory neurons (19,689) examined in this study (6,495 Adamts2, 12,143 Agmat, 991 Rrad) correlated with marker gene expression of all L2/3 V1 excitatory neurons from a reference dataset.25 Correlation of the gene expression vectors was calculated between individual neurons of this study with averaged expression vectors for each of the L2/3 excitatory types of the reference dataset. Assigned cell types of each neuron are indicated with color bars on top (this study) and left.25 To prevent aliasing, data are smoothed across cells with a window size of 20.
-
-***
-
 ### Functional tagging with CaMPARI2
 **(A)** Schematic of the experimental approach: C57BL/6 mice that express CaMPARI2 in V1 were head-fixed on a spherical treadmill in a virtual reality environment.
 A 405 nm laser was directed at V1 through a cranial window to trigger photoconversion of CaMPARI2. Tissue from granular and supragranular layers of V1 was
