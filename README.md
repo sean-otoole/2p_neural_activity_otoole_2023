@@ -60,15 +60,74 @@ At the moment this README is still under construction, more details to follow.
 
 ```
 
-<p align="center">
-            <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_1.png" width = "600" align = "middle">
-</p>
+## Modified excerpts (figures and methods) from O'Toole et al. 2023 relevant to this repository
 
 <p align="center">
-            <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_6.png" width = "600" align = "middle">
+            <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_1.png" width = "900" align = "middle">
 </p>
 
+### Functional tagging with CaMPARI2
+**(A)** Schematic of the experimental approach: C57BL/6 mice that express CaMPARI2 in V1 were head-fixed on a spherical treadmill in a virtual reality environment.
+A 405 nm laser was directed at V1 through a cranial window to trigger photoconversion of CaMPARI2. Tissue from granular and supragranular layers of V1 was
+dissected, dissociated, sorted into different photoconversion groups using FACS (low photoconversion is green, intermediate photoconversion is pink, high
+photoconversion is red), and single-cell RNA-sequenced with the 10x Genomics platform.
+**(B)** Three separate experimental groups for functional tagging were used. In the first group of mice (left), photoconversion (purple shading) was triggered on
+visuomotor mismatch events. In the second group of mice (middle), photoconversion was triggered on running onsets in darkness. In the third group of mice
+(right), photoconversion was triggered on onsets of full-field drifting grating stimuli while the mouse was stationary.
+**(C)** CaMPARI2 fluorescence after photoconversion during visuomotor mismatch in L2/3 neurons. Only a subset of expressing CaMPARI2 (top left, identified with
+green fluorescence) showed red fluorescence (top right). Bottom image is a merge of the green and red images. Scale bars are 25 mm.
+**(D)** Average CaMPARI2 responses in the green channel to visuomotor mismatch for 417 neurons recorded in 4 mice, sorted by the strength of visuomotor
+mismatch response. Note, increases in calcium result in decreases in green fluorescence. Dashed white and pink boxes show to the baseline subtraction (BL) and
+response windows used to calculate mismatch responses for (E) and (F).
+**(E)** Scatterplot of the average fluorescence response to visuomotor mismatch plotted against the ratio of photoconversion. A ratio of red/green fluorescence (F red/
+F green) was used as a measure of photoconversion. Plotted are neurons from 4 mice that underwent photoconversion during visuomotor mismatch. The red line is
+a linear fit (r = 0.043). Shading indicates the 95% confidence bound for the linear fit. Here and elsewhere: p < 0.05; **p < 0.01; ***p < 0.001; n.s., not significant.
+**(F)** Population vector correlation of the visuomotor mismatch, running onset, and grating onset response with photoconversion during mismatch (4 mice). Red
+horizontal bars mark median. Note, the data and fit shown in (E) are aggregated over mice.
+
 <p align="center">
-            <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_s1.png" width = "600" align = "middle">
+            <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_6.png" width = "900" align = "middle">
 </p>
+
+### L2/3 neurons targeted by artificial promoters exhibited differential visuomotor responses
+**(A)** The average response to visuomotor mismatch in the AP.Adamts2.1 labeled population (orange) was stronger than in the AP.Agmat.1 (dark gray) and the
+AP.Baz1a.1 (blue) population. Orange shading indicates the duration of visuomotor mismatch; gray shading indicates the SEM over neurons. Response curves
+were compared bin-by-bin and intervals of at least 2 significant consecutive bins (p < 0.05) are marked with a black bar. Each of the three comparisons is denoted
+by a pair of line segments to the left, corresponding in color to the data being plotted.
+**(B)** As in **A**, but for the response to running onsets.
+**(C)** As in **A**, but for the response to the onset of randomized grating.
+**(D)** Distribution (smoothed) of mismatch responses of all Adamts2 (orange), Agmat (black), and Baz1a (blue) neurons. Same data as in (A). Vertical lines mark
+means. Dark horizontal lines mark standard deviation of the data. The light horizontal lines below are an estimated lower bound of the trial-to-trial measurement
+noise of the calcium responses. Note, the response variance within a cell type can be fully explained by the trial-to-trial noise of the calcium
+response measurement.
+**(E)** As in **D**, but for the response to running onsets.
+**(F)** As in **D**, but for the response to the onset of randomized grating.
+**(G)** Average correlation of neuronal activity with visual flow speed during open-loop sessions for L2/3 Adamts2, Agmat, and Baz1a neurons. Error bars indicate
+SEM over neurons. *p < 0.05; **p < 0.01; ***p < 0.001; n.s.: not significant.
+**(H)** As in **D**, but for average correlation of neuronal activity with running during open-loop sessions. Error bars indicate SEM over neurons.
+**(I)** Schematic of a model circuit that would explain the response properties of Adamts2 and Rrad L2/3 excitatory neuron types. Triangles indicate L2/3 excitatory
+neuron types; circles indicate inhibitory interneurons. L2/3 Adamts2 neurons respond to visuomotor mismatch, and their activity is positively correlated with
+running and negatively correlated with visual flow speed. This is consistent with the functional signature of a negative prediction error neuron. L2/3 Rrad neurons
+show visually driven responses and are significantly less driven by running than the other cell types, suggesting that they function as positive prediction error
+neurons. Previous work has suggested that negative prediction error neurons are bottom-up inhibited by Sst positive interneurons, while the source of top-
+down inhibition on positive prediction error neurons remains unclear.
+
+<p align="center">
+            <img src="https://github.com/sean-otoole/2p_neural_activity_otoole_2023/blob/main/images/figure_s1.png" width = "900" align = "middle">
+</p>
+
+### CaMPARI2 labelled neurons display functional specificity and are suitable for FACS sorting.
+**(A)** Scatter plot of the average fluorescence response to visuomotor mismatch plotted against the level of photoconversion per neuron, in mice that underwent photoconversion during visuomotor mismatch. Different colors mark data from different mice. Each line is an estimate of a fit to the data using linear regression for each of the 4 mice.
+**(B)** As in **A**, but for the running onset response.
+**(C)** As in **A**, but for the grating onset response.
+**(D)** Scatter plot of green and red fluorescence after FACS of an example dissociated piece of dissociated cortical tissue without CaMPARI2 expression. Each dot corresponds to one putative cell. Cells were selected for size, filtered for doublets, and high Draq7 (dead) cells were excluded.
+**(E)** As in **D**, but for an infected cortical preparation that expressed CaMPARI2 without photoconversion.
+**(F)** As in **E**, but with photoconversion.
+**(G)** An example FACS plot illustrating ratiometric sorting. FACS gates were set to exclude background fluorescence and to sort by red to green ratio. Cells were sorted into equally sized bins corresponding to the first (green), second (light blue), third (pink) and fourth (red) quantiles of the red to green fluorescence ratio distribution. The middle quartiles were later combined into the intermediate photoconversion group for single-cell RNA-sequencing analysis.
+**(H)** The distribution of red to green ratios for cells shown in G, for the different photoconversion groups
+separately (1 st photoconversion group, 1787 cells; 2 nd photoconversion group, 1786 cells; 3rd photoconversion group, 1786 cells; 4 th photoconversion group, 1787 cells). Box plots mark the median and quartiles, whiskers extend to cover data up to ± 1.5 inter quartile range past the 75th and 25th quartiles respectively. A small number of cells had ratios larger than 1 (not shown).
+**(I)** To test for stability of FACS sorting, we measured the red to green ratio in the photoconversion groups shown in E separately by passing them through the FACS sorter again (1 st photoconversion group, 399 cells; 2nd photoconversion group, 539 cells; 3 rd photoconversion group, 504 cells; 4th photoconversion group, 458 cells). Shown is the distribution of red to green ratios measured in the second measurement. Box plots mark the median and quartiles, whiskers extend to cover data up to ±30 1.5 inter quartile range past the 75th and 25th quartiles respectively.
+**(J)** The median red to green ratios for the sort and re-sort experiments in panels H and I. Error bars correspond to the 25th and 75th percentile.
+
+### Methods
 
