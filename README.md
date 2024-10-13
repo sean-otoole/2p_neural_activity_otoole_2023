@@ -7,52 +7,52 @@ Matlab code for the analysis of neural imaging data in awake behaving animals fo
 
 ## Project Organization
 ```
-┌── correlate_pc_with_act.m                         : funciton that returns a set of correlations given several inputs
+┌── correlate_pc_with_act.m                         : function that returns a set of correlations given several inputs
 |── delta_calc.m                                    : returns the delta values for a set of time points given a peak and baseline period
 ├── determine_frameset_fig_6.m                      : function which returns the indices of specific imaging frames relevant to a particular paradigm, ie only a subset of imaged frames contain a relevant behavioral paradigm or specific stimulus
 ├── determine_frameset_with_running_thresh.m        : similar to the previous function, except some framesets are excluded due to insufficient running values
-├── estimate_noise_std.m                            : calculates the standard deviation of the of noise, as estimated by comparing odd to even behavioral triggers
-├── fig_1_panels.m                                  : displays example behavioral auxillary images, example microscopy images, raster plots for calcium imaging traces, as well as regression and correlation plots
+├── estimate_noise_std.m                            : calculates the standard deviation of the noise, as estimated by comparing odd to even behavioral triggers
+├── fig_1_panels.m                                  : displays example behavioral auxiliary images, example microscopy images, raster plots for calcium imaging traces, as well as regression and correlation plots
 ├── fig_6_panels_A_B_C.m                            : top level script for processing calcium imaging data and displaying average calcium imaging traces across specific paradigms and cell types
-├── fig_6_panels_D_E_F.m                            : top level script for estimating the noise contributions to the signals examined in panels A,B and C.
+├── fig_6_panels_D_E_F.m                            : top level script for estimating the noise contributions to the signals examined in panels A, B and C.
 ├── fig_6_panels_G_H.m                              : top level script for calculating and and plotting the correlations between neural activity and either running or visual flow
-├── filter_pval_array.m                             : funciton that remove significant p-values that are only briefly significant in a time series data set
+├── filter_pval_array.m                             : funciton that removes significant p-values that are only briefly significant in a time series data set
 ├── ftfil.m                                         : high/low pass filter function (borrowed/not my code)
 ├── getExpLog.m                                     : function that retrieves experiment log data (borrowed/not my code)
 ├── get_deltas_per_site.m                           : function that calculates the average delta value per imaging site
 ├── get_file_size.m                                 : function that gets file size (borrowed/not my code)
-├── get_indices_fig_1.m                             : retrieves the indices for a set of regions of interest (ROIs) used the calculate average fluorescence values for the photoconversion ratio analysis
-├── get_run_vis_correlations_flg.m                  : function for calculating the correlaiton values per neuron between neural activity and either running speed or visual flow speed
+├── get_indices_fig_1.m                             : retrieves the indices for a set of regions of interest (ROIs) used to calculate average fluorescence values for the photoconversion ratio analysis
+├── get_run_vis_correlations_flg.m                  : function for calculating the correlation values per neuron between neural activity and either running speed or visual flow speed
 ├── get_site_indices_for_bootstrap.m                : function for acquiring frame indices for a particular set of sites
-├── get_snps_flg.m                                  : function, that given a stimulus type, a set of imaging sites and threshold parameters, will return snippets of activity for the queried stimulus type across all neurons
+├── get_snps_flg.m                                  : function, that given a stimulus type, a set of imaging sites, and threshold parameters, will return snippets of activity for the queried stimulus type across all neurons
 ├── get_snps_flg_odd_even.m                         : returns a subset of activity snippets, used for noise estimation
 ├── get_the_deltas.m                                : returns the calcium deltas for the CaMPARI data set
-├── get_the_figs_matlab.m                           : master script for generating all matlab relevant figures for O'Toole, 2023 manuscript
+├── get_the_figs_matlab.m                           : master script for generating all Matlab relevant figures for O'Toole, 2023 manuscript
 ├── get_the_roi_counts.m                            : returns the number of ROIs for a given set of imaging sites
-├── get_the_snps_fig_1.m                            : function for acuuiring stimulus specific snippets of activity, specifically for the CaMPARI data set
-├── get_unique_animals.m                            : funciton that returns the number of unique animals for a set of imaging sites
-├── load_ach_chans.m                                : loads the auxilary channels (running, visual stimulus, etc.) for a given experimental id (borrowed/not my code)
-├── load_lvd.m                                      : loads an auxilary data file (borrowed/not my code)
+├── get_the_snps_fig_1.m                            : function for acquiring stimulus specific snippets of activity, specifically for the CaMPARI data set
+├── get_unique_animals.m                            : function that returns the number of unique animals for a set of imaging sites
+├── load_ach_chans.m                                : loads the auxiliary channels (running, visual stimulus, etc.) for a given experimental id (borrowed/not my code)
+├── load_lvd.m                                      : loads an auxiliary data file (borrowed/not my code)
 ├── nan_sem.m                                       : calculates standard error of the mean while ignoring nans (borrowed/not my code)
-├── nan_std.m                                       : calculates standard deviation of the mean while ignorning nans (borrowed/not my code)
-├── nbstrp.m                                        : function that, given two or more groupings, an input data set, and a number of repetitions, performs a hierarchical bootstrap comparison (borrowed/not my code)
-├── normalizeVector.m                               : funciton that normalizes an input to its peak value
-├── plotSEM.m                                       : funciton that plots the average of time series data along with the standard error of the mean (borrowed/not my code)
+├── nan_std.m                                       : calculates the standard deviation of the meanwhile ignorning nans (borrowed/not my code)
+├── nbstrp.m                                        : a function that, given two or more groupings, an input data set, and several repetitions, performs a hierarchical bootstrap comparison (borrowed/not my code)
+├── normalizeVector.m                               : function that normalizes an input to its peak value
+├── plotSEM.m                                       : function that plots the average of time series data along with the standard error of the mean (borrowed/not my code)
 ├── plot_dist_with_noise_estimate.m                 : plotting code for displaying the distribution of noise estimates alongside the experimentally obtained value
 ├── plot_linear_models.m                            : plotting code for multiple linear regressions
 ├── plot_the_traces_fig_6.m                         : plotting code for calcium activity comparisons, outputs statistical comparisons, averaged traces as well as running and visual stimuli
 ├── ratio_calc.m                                    : for a set of sites returns the ratio of red to green fluorescence for all ROIs
 ├── smooth2.m                                       : smoothing function (borrowed/not my code)
-├── supp_1_panels_a_through_c.m                     : plotting code for displaying multiple regressions across aniumals for comparing photoconversion to neural activity responses
-├── supp_1_panels_d_through_j.m                     : facs data plotting code 
+├── supp_1_panels_a_through_c.m                     : plotting code for displaying multiple regressions across animals for comparing photoconversion to neural activity responses
+├── supp_1_panels_d_through_j.m                     : FACS data plotting code 
 ├── supp_6_all_panels.m                             : plots numerous supplemental panels related to calcium imaging experiments
 ├── trig2snps_.m                                    : given a set of triggers or indices returns calcium activity snippets around those indices (borrowed/not my code)
-├── trig2snps2.m                                    : modified version of trig2nps, returns additional auxilary traces (modified from borrowed code)
+├── trig2snps2.m                                    : modified version of trig2nps, returns additional auxiliary traces (modified from borrowed code)
 ├── images/                                         : contains example images used for explanations within the README
 │   └── XXX.png
 │   └── XXX.png
-├── ca.m                                            : clears all currently open figures (borrowned/not my code)
-├── act2mat.m/                                      : converts all z-layers for one imaging site and time point into to a matrix (borrowed/not my code)
+├── ca.m                                            : clears all currently open figures (borrowed/not my code)
+├── act2mat.m/                                      : converts all z-layers for one imaging site and time point into a matrix (borrowed/not my code)
 ├── LICENSE.md                                      : license
 └── README.md                                       : project description
 
@@ -67,21 +67,21 @@ Matlab code for the analysis of neural imaging data in awake behaving animals fo
 ### Functional tagging with CaMPARI2
 **(A)** Schematic of the experimental approach: C57BL/6 mice that express CaMPARI2 in V1 were head-fixed on a spherical treadmill in a virtual reality environment.
 A 405 nm laser was directed at V1 through a cranial window to trigger photoconversion of CaMPARI2. Tissue from granular and supragranular layers of V1 was
-dissected, dissociated, sorted into different photoconversion groups using FACS (low photoconversion is green, intermediate photoconversion is pink, high
+dissected, dissociated, and sorted into different photoconversion groups using FACS (low photoconversion is green, intermediate photoconversion is pink, high
 photoconversion is red), and single-cell RNA-sequenced with the 10x Genomics platform.
 **(B)** Three separate experimental groups for functional tagging were used. In the first group of mice (left), photoconversion (purple shading) was triggered on
 visuomotor mismatch events. In the second group of mice (middle), photoconversion was triggered on running onsets in darkness. In the third group of mice
 (right), photoconversion was triggered on onsets of full-field drifting grating stimuli while the mouse was stationary.
 **(C)** CaMPARI2 fluorescence after photoconversion during visuomotor mismatch in L2/3 neurons. Only a subset of expressing CaMPARI2 (top left, identified with
-green fluorescence) showed red fluorescence (top right). Bottom image is a merge of the green and red images. Scale bars are 25 mm.
+green fluorescence) showed red fluorescence (top right). The bottom image is a merge of the green and red images. Scale bars are 25 mm.
 **(D)** Average CaMPARI2 responses in the green channel to visuomotor mismatch for 417 neurons recorded in 4 mice, sorted by the strength of visuomotor
-mismatch response. Note, increases in calcium result in decreases in green fluorescence. Dashed white and pink boxes show to the baseline subtraction (BL) and
+mismatch response. Note increases in calcium result in decreases in green fluorescence. Dashed white and pink boxes show to the baseline subtraction (BL) and
 response windows used to calculate mismatch responses for (E) and (F).
 **(E)** Scatterplot of the average fluorescence response to visuomotor mismatch plotted against the ratio of photoconversion. A ratio of red/green fluorescence (F red/
 F green) was used as a measure of photoconversion. Plotted are neurons from 4 mice that underwent photoconversion during visuomotor mismatch. The red line is
 a linear fit (r = 0.043). Shading indicates the 95% confidence bound for the linear fit. Here and elsewhere: p < 0.05; **p < 0.01; ***p < 0.001; n.s., not significant.
 **(F)** Population vector correlation of the visuomotor mismatch, running onset, and grating onset response with photoconversion during mismatch (4 mice). Red
-horizontal bars mark median. Note, the data and fit shown in (E) are aggregated over mice.
+horizontal bars mark the median. Note, that the data and fit shown in (E) are aggregated over mice.
 
 ***
 
@@ -97,8 +97,8 @@ by a pair of line segments to the left, corresponding in color to the data being
 **(B)** As in **A**, but for the response to running onsets.
 **(C)** As in **A**, but for the response to the onset of randomized grating.
 **(D)** Distribution (smoothed) of mismatch responses of all Adamts2 (orange), Agmat (black), and Baz1a (blue) neurons. Same data as in (A). Vertical lines mark
-means. Dark horizontal lines mark standard deviation of the data. The light horizontal lines below are an estimated lower bound of the trial-to-trial measurement
-noise of the calcium responses. Note, the response variance within a cell type can be fully explained by the trial-to-trial noise of the calcium
+means. Dark horizontal lines mark the standard deviation of the data. The light horizontal lines below are an estimated lower bound of the trial-to-trial measurement
+noise of the calcium responses. Note, that the response variance within a cell type can be fully explained by the trial-to-trial noise of the calcium
 response measurement.
 **(E)** As in **D**, but for the response to running onsets.
 **(F)** As in **D**, but for the response to the onset of randomized grating.
