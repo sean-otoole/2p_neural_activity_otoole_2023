@@ -49,8 +49,6 @@ Matlab code for the analysis of neural imaging data in awake behaving animals fo
 ├── trig2snps_.m                                    : given a set of triggers or indices returns calcium activity snippets around those indices (borrowed/not my code)
 ├── trig2snps2.m                                    : modified version of trig2nps, returns additional auxiliary traces (modified from borrowed code)
 ├── images/                                         : contains example images used for explanations within the README
-│   └── XXX.png
-│   └── XXX.png
 ├── ca.m                                            : clears all currently open figures (borrowed/not my code)
 ├── act2mat.m/                                      : converts all z-layers for one imaging site and time point into a matrix (borrowed/not my code)
 ├── LICENSE.md                                      : license
